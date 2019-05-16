@@ -11,8 +11,8 @@ spec:
     spec:
       containers:
       - name: addressbook
-        #image: abhijitdey94/test_tomcat:13
-        image: jenkins
+        image: abhijitdey94/test_tomcat:13
+        #image: jenkins
         ports:
         - containerPort: 80
 
