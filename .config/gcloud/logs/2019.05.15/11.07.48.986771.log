@@ -1,0 +1,27 @@
+2019-05-15 11:07:48,996 DEBUG    root            Loaded Command Group: [u'gcloud', u'container']
+2019-05-15 11:07:48,999 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters']
+2019-05-15 11:07:49,002 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters', u'create']
+2019-05-15 11:07:49,100 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--zone: "asia-south1-c", NAME: "k8s-cluster"]
+2019-05-15 11:07:49,118 WARNING  root            Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+2019-05-15 11:07:49,121 WARNING  root            Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+2019-05-15 11:07:49,121 WARNING  root            Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+2019-05-15 11:07:49,121 WARNING  root            Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+2019-05-15 11:07:49,121 INFO     ___FILE_ONLY___ This will enable the autorepair feature for nodes. Please see
+https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more
+information on node autorepairs.
+
+
+2019-05-15 11:07:49,122 WARNING  root            Starting in Kubernetes v1.10, new clusters will no longer get compute-rw and storage-ro scopes added to what is specified in --scopes (though the latter will remain included in the default --scopes). To use these scopes, add them explicitly to --scopes. To use the new behavior, set container/new_scopes_behavior property (gcloud config set container/new_scopes_behavior true).
+2019-05-15 11:07:54,865 DEBUG    root            (gcloud.container.clusters.create) ResponseError: code=403, message=Insufficient regional quota to satisfy request: resource "CPUS": request requires '3.0' and is short '3.0'. project has a quota of '8.0' with '0.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=xenon-mantis-228404.
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 848, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 770, in Run
+    resources = command_instance.Run(args)
+  File "/usr/lib/google-cloud-sdk/lib/surface/container/clusters/create.py", line 356, in Run
+    raise exceptions.HttpException(error, util.HTTP_ERROR_FORMAT)
+HttpException: ResponseError: code=403, message=Insufficient regional quota to satisfy request: resource "CPUS": request requires '3.0' and is short '3.0'. project has a quota of '8.0' with '0.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=xenon-mantis-228404.
+2019-05-15 11:07:54,871 ERROR    root            (gcloud.container.clusters.create) ResponseError: code=403, message=Insufficient regional quota to satisfy request: resource "CPUS": request requires '3.0' and is short '3.0'. project has a quota of '8.0' with '0.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=xenon-mantis-228404.

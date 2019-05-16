@@ -1,0 +1,26 @@
+2019-05-15 10:51:53,532 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2019-05-15 10:51:53,535 DEBUG    root            Running [gcloud.init] with arguments: []
+2019-05-15 10:51:53,536 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2019-05-15 10:51:53,537 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2019-05-15 10:51:53,537 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2019-05-15 10:51:53,537 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2019-05-15 10:51:53,538 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2019-05-15 10:51:53,538 INFO     ___FILE_ONLY___ Checking network connection...
+2019-05-15 10:51:57,545 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2019-05-15 10:51:57,545 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2019-05-15 10:52:18,614 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

@@ -1,0 +1,26 @@
+2019-05-15 16:00:40,078 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2019-05-15 16:00:40,080 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'config_helper']
+2019-05-15 16:00:40,083 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2019-05-15 16:00:40,094 INFO     root            Display format: "default json"
+2019-05-15 16:00:40,094 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "abhijit.dey94.prr@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "xenon-mantis-228404"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.GlwJB0azUvLV-TJCiNhVsu59agLhTis8I4d0sXQfUC9bfyDECBqWKGNy8ZXe5u1rO--bnCNSl1Sc_rax6-NG6brXgu823oqJgtZzR3jDA8l8aNueaqMf3lKNsSS6lg",
+    "token_expiry": "2019-05-15T17:00:38Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/root/.config/gcloud/config_sentinel"
+  }
+}
+2019-05-15 16:00:40,095 INFO     ___FILE_ONLY___ 
+
+2019-05-15 16:00:40,101 DEBUG    root            SDK update checks are disabled.

@@ -1,0 +1,82 @@
+2019-05-15 11:08:59,859 DEBUG    root            Loaded Command Group: [u'gcloud', u'container']
+2019-05-15 11:08:59,862 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters']
+2019-05-15 11:08:59,864 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters', u'create']
+2019-05-15 11:08:59,936 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--zone: "asia-south1-c", NAME: "k8s-cluster"]
+2019-05-15 11:08:59,942 WARNING  root            Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+2019-05-15 11:08:59,944 WARNING  root            Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+2019-05-15 11:08:59,944 WARNING  root            Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+2019-05-15 11:08:59,944 WARNING  root            Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+2019-05-15 11:08:59,944 INFO     ___FILE_ONLY___ This will enable the autorepair feature for nodes. Please see
+https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more
+information on node autorepairs.
+
+
+2019-05-15 11:08:59,945 WARNING  root            Starting in Kubernetes v1.10, new clusters will no longer get compute-rw and storage-ro scopes added to what is specified in --scopes (though the latter will remain included in the default --scopes). To use these scopes, add them explicitly to --scopes. To use the new behavior, set container/new_scopes_behavior property (gcloud config set container/new_scopes_behavior true).
+2019-05-15 11:09:03,877 INFO     ___FILE_ONLY___ Creating cluster k8s-cluster...
+2019-05-15 11:11:46,873 INFO     root            Operation <Operation
+ endTime: u'2019-05-15T11:11:42.364252123Z'
+ name: u'operation-1557918543752-0ac60bce'
+ operationType: OperationTypeValueValuesEnum(CREATE_CLUSTER, 1)
+ selfLink: u'https://container.googleapis.com/v1/projects/412187786830/zones/asia-south1-c/operations/operation-1557918543752-0ac60bce'
+ startTime: u'2019-05-15T11:09:03.752281002Z'
+ status: StatusValueValuesEnum(DONE, 3)
+ targetLink: u'https://container.googleapis.com/v1/projects/412187786830/zones/asia-south1-c/clusters/k8s-cluster'
+ zone: u'asia-south1-c'> succeeded after 162.995 seconds
+2019-05-15 11:11:47,361 INFO     ___FILE_ONLY___ Created [https://container.googleapis.com/v1/projects/xenon-mantis-228404/zones/asia-south1-c/clusters/k8s-cluster].
+
+2019-05-15 11:11:47,362 INFO     ___FILE_ONLY___ To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/asia-south1-c/k8s-cluster?project=xenon-mantis-228404
+
+2019-05-15 11:11:47,362 DEBUG    root            unable to load default kubeconfig: unable to load kubeconfig for /root/.kube/config: Unable to read file [/root/.kube/config]: [Errno 2] No such file or directory: '/root/.kube/config'; recreating /root/.kube/config
+2019-05-15 11:11:47,370 DEBUG    root            Saved kubeconfig to /root/.kube/config
+2019-05-15 11:11:47,370 INFO     ___FILE_ONLY___ kubeconfig entry generated for k8s-cluster.
+
+2019-05-15 11:11:47,372 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___ NAME
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___          
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___ LOCATION
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___        
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___ MASTER_VERSION
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___ MASTER_IP
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___       
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___    
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___ NODE_VERSION
+2019-05-15 11:11:47,376 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ NUM_NODES
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ STATUS
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ 
+
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ k8s-cluster
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ asia-south1-c
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ 1.11.8-gke.6
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___     
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ 35.200.162.96
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ n1-standard-1
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,377 INFO     ___FILE_ONLY___ 1.11.8-gke.6
+2019-05-15 11:11:47,378 INFO     ___FILE_ONLY___   
+2019-05-15 11:11:47,378 INFO     ___FILE_ONLY___ 3
+2019-05-15 11:11:47,378 INFO     ___FILE_ONLY___           
+2019-05-15 11:11:47,378 INFO     ___FILE_ONLY___ RUNNING
+2019-05-15 11:11:47,378 INFO     ___FILE_ONLY___ 
+
+2019-05-15 11:11:47,379 DEBUG    root            SDK update checks are disabled.

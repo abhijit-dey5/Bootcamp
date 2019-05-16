@@ -1,0 +1,27 @@
+2019-05-16 05:07:43,422 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2019-05-16 05:07:43,424 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'config_helper']
+2019-05-16 05:07:43,428 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2019-05-16 05:07:43,447 INFO     oauth2client.client Refreshing access_token
+2019-05-16 05:07:43,559 INFO     root            Display format: "default json"
+2019-05-16 05:07:43,560 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "abhijit.dey94.prr@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "xenon-mantis-228404"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.GlwLB04euq986bVEB9cNA5BJgUKUrZt8977P7Jew2WGQ66QYSOtcy3PiKz2zVhuJD-CIrbTmsnmLkcG9vKPmESLzIDO6qgJA_ybP1eIIoRB9k1Yh1fz2cjkBahN5jQ",
+    "token_expiry": "2019-05-16T06:07:43Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/root/.config/gcloud/config_sentinel"
+  }
+}
+2019-05-16 05:07:43,560 INFO     ___FILE_ONLY___ 
+
+2019-05-16 05:07:43,561 DEBUG    root            SDK update checks are disabled.

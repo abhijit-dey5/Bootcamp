@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service-load-balancer
+  labels:
+    service: my-service
+spec:
+  selector:
+    app: test-deployment
+  type: LoadBalancer
+  ports:
+  - port: 80
+    nodePort: 31222
+    protocol: TCP
